@@ -48,9 +48,9 @@ dependencies {
 ```
 
 # Ref
-[Build System Overview](http://developer.android.com/intl/ko/sdk/installing/studio-build.html)
-[Configuring Gradle Builds](http://developer.android.com/intl/ko/tools/building/configuring-gradle.html)
-[Build System Concepts](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)
-[Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
+* [Build System Overview](http://developer.android.com/intl/ko/sdk/installing/studio-build.html)
+* [Configuring Gradle Builds](http://developer.android.com/intl/ko/tools/building/configuring-gradle.html)
+* [Build System Concepts](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)
+* [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 
 Written by KimKevin at Flitto, and distributed under MIT license.
