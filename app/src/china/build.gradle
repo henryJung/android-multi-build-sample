@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 23        // 컴파일 할 sdk 버전
+    buildToolsVersion "23.0.1"  // 빌드 툴 버전
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    println '[Flitto:China] build.gradle dependencies'
+
+    compile 'com.mcxiaoke.volley:library:1.0.19';
+
+    println 'china/build.gradle started'
+
+//    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+//        transitive = true;
+//    }
+
+}
+
+//repositories {
+//    flatDir {
+//        dirs 'libs'
+//    }
+//    jcenter()
+//
+//    maven { url 'https://maven.fabric.io/public' }
+//}
+//
+//
+//buildscript {
+//    repositories {
+//        maven { url 'https://maven.fabric.io/public' }
+//    }
+//
+//    dependencies {
+//        classpath 'io.fabric.tools:gradle:1.+'
+//    }
+//}
+
