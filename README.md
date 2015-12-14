@@ -6,19 +6,7 @@ There are two projects to support Global(googleplay, naver, etc) and China(360, 
 
 # Build.gradle
 ```
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 23        // 컴파일 할 sdk 버전
-    buildToolsVersion "23.0.2"  // 빌드 툴 버전
-
-    defaultConfig {
-        applicationId "com.flitto.android.buildsystemsample"    // 패키지 이름, 앱 아이디
-        minSdkVersion 14        // 최소 지원 안드로이드 sdk 버전
-        targetSdkVersion 23     // 개발 안드로이드 sdk 버전
-        versionCode 1
-        versionName "1.0"
-    }
+...
 
     buildTypes {
         release {
@@ -54,6 +42,8 @@ dependencies {
     globalCompile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     globalCompile fileTree(dir: 'src/global/library-global', include: ['*.jar'])
 }
+
+...
 ```
 
 Written by KimKevin at Flitto, and distributed under MIT license.
