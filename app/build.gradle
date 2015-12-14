@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23        // 컴파일 할 sdk 버전
-    buildToolsVersion "23.0.2"  // 빌드 툴 버전
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.flitto.android.buildsystemsample"    // 패키지 이름, 앱 아이디
-        minSdkVersion 14        // 최소 지원 안드로이드 sdk 버전
-        targetSdkVersion 23     // 개발 안드로이드 sdk 버전
+        applicationId "com.flitto.android.buildsystemsample"
+        minSdkVersion 14
+        targetSdkVersion 23     
         versionCode 1
         versionName "1.0"
     }

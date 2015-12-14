@@ -29,3 +29,4 @@ proguard/
 # Etc
 .DS_Store
 *.iml
+.idea
