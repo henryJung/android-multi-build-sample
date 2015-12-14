@@ -52,4 +52,4 @@ dependencies {
 * [Build System Concepts](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)
 * [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 
-Written by KimKevin at Flitto, and distributed under MIT license.
+Written by KimKevin at Flitto
