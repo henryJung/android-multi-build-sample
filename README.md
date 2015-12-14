@@ -1,5 +1,4 @@
 # flitto-android-multi-build-sample
-Multi-project Builds by using Build Variants
 This sample project consists of the two build types (debug and release) and two product flvaors as deploy type (global and china) to build multi-projects by using build variants.
 
 # Why?
