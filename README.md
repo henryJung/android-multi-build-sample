@@ -15,24 +15,14 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 ```shell
 ...
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            debuggable true
-        }
-    }
-
     productFlavors {
         global {
-            versionCode 1
-            versionName "1.0-global"
+            versionCode 203
+            versionName "4.2.1"
         }
         china {
-            versionCode 1
-            versionName "1.0-china"
+            versionCode 103
+            versionName "4.1.0"
         }
     }
 }
