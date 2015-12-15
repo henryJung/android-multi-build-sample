@@ -1,16 +1,16 @@
 # flitto-android-multi-build-sample
 This sample project consists of the two build types (debug and release) and two product flvaors as deploy type (global and china) to build multi-projects by using build variants.
 
-# Why?
+## Why?
 The goal is 'Only Import The Resources We Need'. There are two subprojects to support Global(googleplay, naver, etc) and China(360, wandoujia, etc) in Flitto's app. But the app keeps getting bigger and bigger and has lots of dependencies with third-party libraries. As a result, the android library's dex has grown into the dreaded [Building Apps with Over 65K Methods](http://developer.android.com/intl/ko/tools/building/multidex.html) issue. Unfortunately we have to use multidex. so we used [Build variants](http://developer.android.com/intl/ko/tools/building/configuring-gradle.html) to make it works seperate builds which are global and china build. 
 
-# Multi-project Builds
+### Multi-project Builds
 Our project build in gradle consists of one root project, and two subprojects. Define two product flavors for the app module as the below configuration. Finally we can change build variant that we want on Android Studio as the below screenshot.
 
-### Build Variant
+##### Build Variant
 <img src="./screenshot/screenshot_01.png" width=390 height=119 />
 
-### build.gradle
+##### build.gradle
 ```shell
 ...
     buildTypes {
@@ -37,7 +37,10 @@ Our project build in gradle consists of one root project, and two subprojects. D
 ...
 ```
 
-# Multiple External Library
+### Multiple External Library
+* Import Remote Library
+* Import Library Folder
+
 1. You can import the libraries you need to each subproject as you can guess, use <label for productFlavor>compile'.
 
 2. Check library's xml list which you add multiple lines of dependencies for each product flavor in libraries folder (path : /project/.idea/)
@@ -46,12 +49,7 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 4. Check library's xml list again to see what are changed.
 
-### build.gradle
-
-* Import Remote Library
-* Import Library Folder
-
-
+##### build.gradle
 ```shell
 ...
 dependencies {
@@ -68,14 +66,14 @@ dependencies {
 ...
 ```
 
-# Two Flavors with Different AndroidManifest files
+### Two Flavors with Different AndroidManifest files
 Permission is getting more and more important from Android 6.0. So we made AndroidManifest file to each flavor subproject.
 
-### Adding AndroidManifest file
+##### Adding AndroidManifest file
 * /src/global/AndroidManifest.xml
 * /src/china/AndroidManifest.xml
 
-# Directory Structure
+### Directory Structure
 ```shell
 +   app
 |   +– src
@@ -95,15 +93,14 @@ Permission is getting more and more important from Android 6.0. So we made Andro
 /
 ```
 
-# Next Step
+### Next Step
 * We are supporting more than 30 China stores, so how do we make multiple apk files that are a little different each other at once?
 * Two Flavors with different build.gralde files.
 
-
-# Ref
+### Ref
 * [Build System Overview](http://developer.android.com/intl/ko/sdk/installing/studio-build.html)
 * [Configuring Gradle Builds](http://developer.android.com/intl/ko/tools/building/configuring-gradle.html)
 * [Build System Concepts](http://tools.android.com/tech-docs/new-build-system/build-system-concepts)
 * [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 
-Written by KimKevin at Flitto
+Written by KimKevin(kevin@flitto.com) at Flitto
