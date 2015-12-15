@@ -5,7 +5,7 @@ This sample project consists of the two build types (debug and release) and two 
 The goal is 'Only Import The Resources We Need'. There are two subprojects to support Global(googleplay, naver, etc) and China(360, wandoujia, etc) in Flitto's app. But the app keeps getting bigger and bigger and has lots of dependencies with third-party libraries. As a result, the android library's dex has grown into the dreaded [Building Apps with Over 65K Methods](http://developer.android.com/intl/ko/tools/building/multidex.html) issue. Unfortunately we have to use multidex to figure it out. so we used [Build variants](http://developer.android.com/intl/ko/tools/building/configuring-gradle.html) to make it works seperate builds which are global and china build. 
 
 ### Multi-Project Builds
-Our project build in gradle consists of one root project, and two subprojects. Define two product flavors for the app module as the below configuration. Finally we can change build variant that we want on Android Studio as the below screenshot.
+Our project build in gradle consists of one root project, and two subprojects. Define two product flavors for the app module as the below configuration. If you change build variant you want on Android Studio, you will see other flavor subprojects are disable as the below screenshot.
 
 ##### Build Variant 
 
