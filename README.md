@@ -9,7 +9,7 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 ##### Build Variant 
 
-<img src="./screenshot/screenshot_01.png" width=382 height=429 />
+<img src="./screenshot/screenshot_02.png" width=382 height=429 />
 
 ##### build.gradle
 
