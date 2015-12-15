@@ -88,7 +88,8 @@ Permission is getting more and more important from Android 6.0. So we made Andro
 
 ### Next Step
 Actually these are our main goal.
-* We are supporting more than 30 China stores, so how do we make multiple apk files that are a little different each other at once?
+* How to support more than 30 China stores without productFlavor. (maybe by using [flavorDimension](http://tools.android.com/tech-docs/new-build-system/user-guide))
+* How do we make multiple apk files that are a little different each other at once?
 * Two Flavors with different build.gralde files.
 
 ### Ref
