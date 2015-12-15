@@ -25,7 +25,7 @@ public class SecondActivity extends AppCompatActivity {
         TextView contentTxt = (TextView) findViewById(R.id.second_content_txt);
 
         /**
-         * Set ACCESS_NETWORK_STATE to Only AndoridManifest.xml of China flavor
+         * Set ACCESS_NETWORK_STATE to Only AndoridManifest.xml of Glbal flavor
          */
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
