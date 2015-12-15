@@ -30,6 +30,8 @@ Our project build in gradle consists of one root project, and two subprojects. D
 ```
 
 ### Multiple External Library
+Example We used two kinds of push service libraries which are GCM and Baidu, gcm for Global and baidu for China.
+
 * Import Remote Library
 * Import Library Folder
 
@@ -65,6 +67,33 @@ Permission is getting more and more important from Android 6.0. So we made Andro
 > ##### Adding AndroidManifest file
 * /src/global/AndroidManifest.xml
 * /src/china/AndroidManifest.xml
+
+### How does it work?
+Should see SecondActivity and AndroidManifest.xml in each flavor subproject carefully. The below codes will make RuntimeException becasue there is no permission for connecting the network in AndroidManifest of global flavor.
+
+##### SecondActivity (flavor : china)
+```java
+protected void onCreate(Bundle savedInstanceState) {
+    ...
+    
+    /**
+     * Set ACCESS_NETWORK_STATE to Only AndoridManifest.xml of Global flavor
+     */
+    ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    try {
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        contentTxt.setText(networkInfo.toString());
+    } catch (RuntimeException e) {
+        contentTxt.setText("RuntimeException Occured. please check android.permission.ACCESS_NETWORK_STATE!");
+    }
+    
+    /**
+     * PushManger for Baidu Push Service was imported by particularly library-china folder
+     */
+    PushManager manager;
+    
+    ...
+```
 
 ### Directory Structure
 ```shell
