@@ -11,7 +11,7 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 <img src="./screenshot/screenshot_01.png" width=390 height=119 />
 
-> ##### build.gradle
+##### build.gradle
 
 ```shell
 ...
@@ -51,7 +51,7 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 4. Check library's xml list again to see what are changed.
 
-> ##### build.gradle
+##### build.gradle
 
 ```shell
 ...
