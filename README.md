@@ -7,10 +7,12 @@ The goal is 'Only Import The Resources We Need'. There are two subprojects to su
 ### Multi-Project Builds
 Our project build in gradle consists of one root project, and two subprojects. Define two product flavors for the app module as the below configuration. Finally we can change build variant that we want on Android Studio as the below screenshot.
 
-##### Build Variant
+##### Build Variant 
+
 <img src="./screenshot/screenshot_01.png" width=390 height=119 />
 
-##### build.gradle
+> ##### build.gradle
+
 ```shell
 ...
     buildTypes {
@@ -49,7 +51,8 @@ Our project build in gradle consists of one root project, and two subprojects. D
 
 4. Check library's xml list again to see what are changed.
 
-##### build.gradle
+> ##### build.gradle
+
 ```shell
 ...
 dependencies {
@@ -69,7 +72,7 @@ dependencies {
 ### Two Flavors with Different AndroidManifest files
 Permission is getting more and more important from Android 6.0. So we made AndroidManifest file to each flavor subproject.
 
-##### Adding AndroidManifest file
+> ##### Adding AndroidManifest file
 * /src/global/AndroidManifest.xml
 * /src/china/AndroidManifest.xml
 
